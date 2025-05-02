@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>台中交通分析專案</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/darkly/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+
+    <div class="container py-4">
+
+        <header class="mb-4">
+            <h1 class="text-primary fw-bold">🚗 台中交通壅塞分析專案</h1>
+            <p class="text-muted">從福田水資源中心到台中工業區塑膠中心的通勤模擬</p>
+            <!-- ✅ 這裡插入按鈕 -->
+    <button class="btn btn-primary mb-4">測試主題按鈕</button>
+
+            <hr>
+        </header>
+
+        <section class="mb-5">
+            <h3>📍 通勤路線圖</h3>
+            <div class="card shadow-sm">
+                <img src="route_map.png" class="card-img-top rounded" alt="通勤路線圖">
+                <div class="card-body">
+                    <p class="card-text">實際路線規劃，使用 OpenRouteService API 生成。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3>📊 車速變化圖</h3>
+            <div class="card shadow-sm">
+                <img src="speed_chart.png" class="card-img-top rounded" alt="車速變化圖">
+                <div class="card-body">
+                    <p class="card-text">不同時間區段的車速模擬，顏色代表壅塞程度。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3>⏱️ 出發時間比較圖</h3>
+            <div class="card shadow-sm">
+                <img src="time_comparison.png" class="card-img-top rounded" alt="通勤時間比較圖">
+                <div class="card-body">
+                    <p class="card-text">每 15 分鐘出發一次，預估所需通勤時間。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h4>📝 分析摘要</h4>
+            <ul class="list-group list-group-flush shadow-sm rounded">
+                <li class="list-group-item">尖峰時段：07:00～08:30、17:00～18:30</li>
+                <li class="list-group-item">最壅塞路段：向上路一段</li>
+                <li class="list-group-item">建議避開出發時間：07:15～07:45</li>
+                <li class="list-group-item">可考慮繞道：忠明南路 → 工業區路</li>
+            </ul>
+        </section>
+
+        <footer class="text-center text-muted mt-4">
+            <hr>
+            <p class="mb-0">製作人：oliver ｜ 技術：Python, Bootstrap, GitHub Pages</p>
+            <p class="mb-0">日期：2025-04</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
